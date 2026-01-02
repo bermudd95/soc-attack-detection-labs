@@ -62,7 +62,7 @@ A full SOC-style incident report is included, documenting:
 - Mitigation and hardening recommendations
 
 📄 **Report Location:**  
-`incident-report/ssh-bruteforce-root-cause.md`
+`incident-report/ssh-bruteforce-incident-report.md`
 
 ---
 
