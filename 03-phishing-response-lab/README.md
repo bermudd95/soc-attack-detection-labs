@@ -1,69 +1,78 @@
-# Phishing Detection & Incident Response Lab
+# Phishing Response & Security Awareness Lab
 
 ## Overview
 
-This lab simulates a phishing campaign targeting internal users and walks
-through the SOC response lifecycle—from detection to awareness training.
+This lab focuses on **phishing detection, response, and user awareness** as part
+of a SOC-aligned security operations workflow.
 
-The project emphasizes both technical analysis and human-focused security
-controls.
+The project demonstrates how phishing emails are:
+- Simulated for training purposes
+- Analyzed by security teams
+- Used to educate end users and reduce organizational risk
 
 ---
 
 ## Objectives
 
-- Identify phishing indicators
+- Understand common phishing and social engineering techniques
 - Analyze phishing email characteristics
-- Develop an incident response playbook
-- Propose internal security awareness training
+- Demonstrate proper phishing response procedures
+- Develop user-facing phishing awareness training materials
 
 ---
 
-## Phishing Analysis
+## MITRE ATT&CK Mapping
 
-Indicators analyzed include:
+| Tactic | Technique | Technique ID | Description |
+|------|----------|-------------|-------------|
+| Initial Access | Phishing: Spearphishing Link | T1566.002 | Simulated phishing email attempts to entice the user to click a malicious link |
+| Credential Access | Credentials from Phishing | T1056 | Demonstrates how attackers attempt to harvest login credentials |
+| Defense Evasion | Masquerading | T1036 | Email impersonates a trusted organization to evade user suspicion |
 
-- Suspicious sender addresses
-- Social engineering language
-- Malicious links and payloads
-- User interaction risks
+This mapping reflects common techniques observed in real-world phishing campaigns
+and aligns with SOC detection and response workflows.
 
----
+## Lab Components
 
-## Incident Response
+### 1. Sample Phishing Email
 
-An incident response workflow was developed covering:
+A simulated phishing email designed to replicate real-world credential
+harvesting attempts.
 
-- Detection and triage
-- Containment actions
-- User notification
-- Post-incident review
+📁 Location:  
+`phishing-email/sample_phishing_email.md`
 
-📄 **Response Playbook:**  
-`incident-response/response-playbook.md`
-
----
-
-## Security Awareness Training
-
-This lab includes a tailored internal security awareness proposal focusing on:
-
-- Phishing recognition
-- User reporting procedures
-- Risk reduction through education
-
-📄 **Training Proposal:**  
-`awareness-training/security-awareness-proposal.md`
+**Techniques Demonstrated:**
+- Brand impersonation
+- Urgency and fear-based messaging
+- Malicious link placement
 
 ---
 
-## Key Takeaways
+### 2. Phishing Awareness Training
 
-- Phishing remains a primary initial access vector
-- User awareness is a critical security control
-- Clear IR procedures reduce response time and impact
+A security awareness presentation designed to educate users on:
+- What phishing is
+- How to identify phishing emails
+- Best practices for prevention and reporting
+
+📁 Location:  
+`training/phishing_awareness_training.pptx`
 
 ---
 
-> **Disclaimer:**  
-> All phishing scenarios are simulated for educational purposes only.
+## Key Skills Demonstrated
+
+- Phishing and social engineering analysis
+- Security awareness training development
+- Incident response fundamentals
+- SOC documentation practices
+- User education and risk reduction
+
+---
+
+## Disclaimer
+
+All materials in this lab are intended for **educational and defensive
+security purposes only**. Phishing examples are simulated and should never
+be used outside of authorized training environments.
