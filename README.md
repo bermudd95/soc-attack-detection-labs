@@ -26,6 +26,11 @@ developed an incident response playbook and security awareness recommendations.
 
 ---
 
+### Evidence Collected
+- Sysmon Event ID 1 exported (encoded PowerShell execution)
+
+---
+
 ## Skills Demonstrated
 
 - SOC-style incident response workflows
