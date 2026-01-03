@@ -10,6 +10,9 @@
 - Validated command-line execution
 - Confirmed activity was user-initiated in lab environment
 
+### Evidence Collected 
+- Sysmon Evend ID 1 export (encoded PowerShell execution)
+
 ### Recommendations
 - Monitor for repeated encoded PowerShell executions
 - Alert on PowerShell launched from non-standard parent processes
