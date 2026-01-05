@@ -1,97 +1,51 @@
-# Threat Analysis & Vulnerability Assessment (CISA‑Aligned)
+# Threat Analysis & Vulnerability Assessment (CISA-Aligned)
 
 ## Overview
+This lab focuses on analyzing publicly disclosed vulnerabilities using CISA advisories to assess real-world risk and provide remediation guidance suitable for internal stakeholders.
 
-This lab demonstrates **threat intelligence analysis and vulnerability assessment**
-using publicly disclosed advisories from the **Cybersecurity and Infrastructure
-Security Agency (CISA)** and real-world vulnerabilities.
-
-The project simulates a SOC/DFIR workflow to:
-- Assess technical and business risk
-- Communicate vulnerabilities to stakeholders
-- Demonstrate controlled forensic and malware analysis techniques
+The project emphasizes translating technical vulnerabilities into business-relevant security actions.
 
 ---
 
 ## Objectives
-
-- Review active and historically significant CISA advisories
-- Identify affected systems, software components, and threat actors
-- Assess likelihood, impact, and business risk
-- Provide actionable mitigation and remediation guidance
-- Demonstrate supporting analysis techniques using Python in a controlled environment
+- Review active CISA vulnerability advisories
+- Assess technical and operational risk
+- Align findings with MITRE ATT&CK techniques
+- Produce clear remediation recommendations
 
 ---
 
 ## Methodology
-
-1. Reviewed selected CISA vulnerability advisories
-2. Analyzed vulnerability characteristics and exploitation methods
-3. Assessed organizational and operational impact
-4. Mapped applicable threats to the **MITRE ATT&CK framework**
-5. Drafted formal security advisories for internal stakeholders
-6. Demonstrated controlled forensic and malware analysis techniques
+1. Reviewed selected CISA advisories
+2. Identified affected systems and exposure risks
+3. Assessed likelihood and impact
+4. Mapped vulnerabilities to MITRE ATT&CK techniques
+5. Drafted remediation guidance in advisory format
 
 ---
 
-## Security Advisory Deliverable
-
-This lab includes a **sample internal security advisory** modeled after enterprise
-SOC communications, using the Apache Log4j (Log4Shell) vulnerability as a case study.
-
-- Audience: Product Development / Engineering
-- Focus: Risk awareness, severity classification, and remediation guidance
-- Frameworks Referenced: **CVSS, CISA guidance**
-
-📁 **Advisory Location:**  
-`advisory/log4j_security_advisory.md`
+## Sample Security Advisory
+This project includes a sample internal advisory addressing the Apache Log4j (Log4Shell) vulnerability, written to mirror real enterprise communication between security and engineering teams.
 
 ---
 
 ## Python Demonstration Script
+A Python-based ethical decryption demonstration script was created and executed in a sandbox environment to illustrate how encrypted malware artifacts may be analyzed safely.
 
-This project includes a **Python-based decryption demonstration script** used to
-illustrate how analysts may recover encrypted artifacts during malware analysis
-or incident response investigations.
-
-- Purpose: Educational and defensive analysis only  
-- Environment: Isolated, sandboxed, non-production  
-- Scope: Demonstrates brute-force techniques against encrypted ZIP files as part
-  of forensic analysis
-
-📁 **Script Location:**  
-`scripts/zip_password_bruteforce.py`
-
-> No malware samples or password lists are included in this repository.
+- Purpose: Educational demonstration only
+- Environment: Isolated, non-production
+- Scope: Awareness of cryptographic misuse
 
 ---
 
-## MITRE ATT&CK Mapping
-
-| Tactic | Technique | Technique ID | Notes |
-|--------|-----------|--------------|-------|
-| Initial Access | Exploit Public-Facing Application | T1190 | Log4j (Log4Shell) vulnerability exploitation scenario |
-| Execution | Command and Scripting Interpreter | T1059 | Demonstrated via Python decryption script (ethical sandbox) |
-| Impact | Data Manipulation | T1565 | Understanding potential consequences of encrypted malware payloads |
-
----
-
-## Key Skills Demonstrated
-
-- Threat intelligence analysis  
-- Vulnerability and risk assessment  
-- Executive and technical security communication  
-- Incident response and malware analysis concepts  
-- Python scripting for forensic/security analysis  
-- Alignment with **CISA** and **MITRE ATT&CK** frameworks  
-- Ethical handling of security tools and data  
+## Skills Demonstrated
+- Threat intelligence analysis
+- Vulnerability assessment
+- Security advisory writing
+- MITRE ATT&CK alignment
+- Secure scripting awareness
 
 ---
 
 ## Disclaimer
-
-All scripts, analyses, and documentation in this repository are intended
-**strictly for educational purposes** and execution within
-**authorized, controlled environments**.
-
-No testing should be performed on systems or data without explicit permission.
+All activities were performed in a controlled lab environment for educational use only.
