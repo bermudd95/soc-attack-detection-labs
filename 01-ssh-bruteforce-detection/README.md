@@ -1,78 +1,52 @@
-# SSH Brute-Force Attack Simulation & Detection
+# SSH Brute Force Attack Simulation
 
 ## Overview
+This project simulates a real-world SSH brute-force attack to understand how repeated authentication failures appear at the host level and how a SOC analyst would detect, investigate, and respond to the activity.
 
-This lab simulates an unauthorized SSH brute-force attack against a Linux
-virtual machine in a controlled lab environment. The objective is to identify
-brute-force indicators through log analysis, document the incident lifecycle,
-and propose mitigation strategies.
-
-This project mirrors real-world SOC workflows from detection to remediation.
+The lab was designed to mirror attacker and defender behavior using separate Linux systems in a controlled environment.
 
 ---
 
-## Lab Objectives
-
-- Simulate an SSH brute-force attack using Hydra
-- Analyze Linux authentication logs for attack indicators
-- Identify escalation and credential compromise patterns
-- Document root cause and remediation actions
+## Objectives
+- Simulate an SSH brute-force attack using common attacker tooling
+- Identify brute-force indicators within authentication logs
+- Document the attack lifecycle from initial access attempt to containment
+- Produce actionable mitigation recommendations
 
 ---
 
 ## Environment
-
-| Role        | System        |
-|------------|---------------|
-| Attacker   | Kali Linux VM |
-| Defender   | Ubuntu Linux VM |
-| Protocol   | SSH |
+- Attacker: Kali Linux
+- Target: Ubuntu Linux
+- Tooling: Hydra, SSH, Linux authentication logs
 
 ---
 
-## Attack Simulation
-
-- **Attack Type:** SSH Brute Force
-- **Tool Used:** Hydra
-- **Target Account:** `bob_victim`
-- **Password Method:** Dictionary-based brute force
-- **MITRE ATT&CK Technique:**  
-  - T1110 – Brute Force
+## Methodology
+1. Generated repeated SSH login attempts using Hydra
+2. Monitored authentication logs on the target system
+3. Identified indicators of brute-force behavior (failed logins, source IP repetition)
+4. Documented timeline, impact, and response actions
+5. Proposed mitigation steps including access hardening
 
 ---
 
-## Detection & Analysis
-
-Detection was performed using Linux authentication logs:
-
-- `/var/log/auth.log`
-- Repeated failed login attempts
-- High-frequency authentication failures
-- Eventual successful login following failures
+## Key Findings
+- Repeated failed SSH login attempts from a single source
+- Clear log indicators suitable for SIEM detection rules
+- High risk if left unmitigated on internet-facing systems
 
 ---
 
-## Incident Report
-
-A full SOC-style incident report is included, documenting:
-
-- Timeline of attack activity
-- Indicators of compromise (IOCs)
-- Root cause analysis
-- Mitigation and hardening recommendations
-
-📄 **Report Location:**  
-`incident-report/ssh-bruteforce-incident-report.md`
+## Skills Demonstrated
+- Adversary simulation
+- Log analysis
+- Incident documentation
+- Linux security fundamentals
+- SOC-style reporting
 
 ---
 
-## Key Takeaways
+## Disclaimer
+This project was conducted in a controlled lab environment for educational purposes only.
 
-- Weak passwords significantly increase exposure to brute-force attacks
-- SSH logging provides clear detection opportunities
-- Preventive controls such as Fail2Ban and SSH key authentication are critical
-
----
-
-> **Disclaimer:**  
-> This lab was conducted in an isolated environment for educational purposes only.
