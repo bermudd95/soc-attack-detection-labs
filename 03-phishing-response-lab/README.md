@@ -1,78 +1,51 @@
 # Phishing Response & Security Awareness Lab
 
 ## Overview
+This project focuses on identifying, analyzing, and responding to phishing attempts while also addressing the user awareness component of phishing defense.
 
-This lab focuses on **phishing detection, response, and user awareness** as part
-of a SOC-aligned security operations workflow.
-
-The project demonstrates how phishing emails are:
-- Simulated for training purposes
-- Analyzed by security teams
-- Used to educate end users and reduce organizational risk
+The lab combines technical analysis with security education, reflecting real SOC responsibilities.
 
 ---
 
 ## Objectives
-
-- Understand common phishing and social engineering techniques
-- Analyze phishing email characteristics
-- Demonstrate proper phishing response procedures
-- Develop user-facing phishing awareness training materials
+- Analyze phishing emails for social engineering techniques
+- Demonstrate common credential harvesting tactics
+- Develop user-focused phishing awareness training
+- Align phishing techniques with MITRE ATT&CK
 
 ---
 
-## MITRE ATT&CK Mapping
-
-| Tactic | Technique | Technique ID | Description |
-|------|----------|-------------|-------------|
-| Initial Access | Phishing: Spearphishing Link | T1566.002 | Simulated phishing email attempts to entice the user to click a malicious link |
-| Credential Access | Credentials from Phishing | T1056 | Demonstrates how attackers attempt to harvest login credentials |
-| Defense Evasion | Masquerading | T1036 | Email impersonates a trusted organization to evade user suspicion |
-
-This mapping reflects common techniques observed in real-world phishing campaigns
-and aligns with SOC detection and response workflows.
-
-## Lab Components
-
-### 1. Sample Phishing Email
-
-A simulated phishing email designed to replicate real-world credential
-harvesting attempts.
-
-📁 Location:  
-`phishing-email/sample_phishing_email.md`
-
-**Techniques Demonstrated:**
+## Phishing Email Analysis
+A simulated phishing email was created to demonstrate:
+- Urgency-based messaging
 - Brand impersonation
-- Urgency and fear-based messaging
-- Malicious link placement
+- Malicious link usage
+- Psychological manipulation techniques
 
 ---
 
-### 2. Phishing Awareness Training
-
-A security awareness presentation designed to educate users on:
-- What phishing is
-- How to identify phishing emails
-- Best practices for prevention and reporting
-
-📁 Location:  
-`training/phishing_awareness_training.pptx`
+## Security Awareness Training
+A phishing awareness presentation was developed to educate users on:
+- Identifying phishing indicators
+- Safe email handling practices
+- Proper reporting procedures
+- Organizational impact of phishing incidents
 
 ---
 
-## Key Skills Demonstrated
+## MITRE ATT&CK Alignment
+Phishing techniques were mapped to relevant ATT&CK tactics to demonstrate how these attacks are tracked and detected within SOC workflows.
 
-- Phishing and social engineering analysis
-- Security awareness training development
-- Incident response fundamentals
-- SOC documentation practices
-- User education and risk reduction
+---
+
+## Skills Demonstrated
+- Phishing analysis
+- Threat communication
+- Security awareness training
+- SOC reporting practices
+- Framework-based analysis
 
 ---
 
 ## Disclaimer
-
-All materials in this lab are intended for **educational and defensive
-security purposes only**. Phishing examples are simulated and should never
-be used outside of authorized training environments.
+This project is for educational purposes and does not involve live phishing activity.
