@@ -1,27 +1,49 @@
-# Endpoint Detection & Response – Sysmon Lab
+# Sysmon Event Analysis & Incident Response Lab
 
 ## Overview
-This lab demonstrates endpoint monitoring and detection using Sysmon on a
-Windows 11 system. The project simulates suspicious process execution and
-PowerShell activity to analyze endpoint telemetry from a SOC perspective.
+This project analyzes Windows Sysmon telemetry to detect and investigate suspicious PowerShell execution activity.
+
+The focus is on host-based detection, event correlation, and incident documentation.
+
+---
 
 ## Objectives
-- Deploy Sysmon for endpoint telemetry collection
-- Simulate suspicious endpoint activity
-- Analyze Sysmon logs for detection indicators
-- Document SOC-style incident triage
+- Generate suspicious PowerShell activity
+- Capture relevant Sysmon events
+- Analyze execution behavior
+- Produce a formal incident report
 
-## Tools Used
-- Sysmon (Sysinternals)
-- Windows Event Viewer
-- PowerShell
+---
 
-## Key Findings
-- Encoded PowerShell execution generates high-fidelity telemetry
-- LOLBins such as certutil can be detected through process and command-line analysis
-- Proper context is critical to avoid false positives
+## Environment
+- Operating System: Windows
+- Logging: Sysmon
+- Focus Events: Process creation and PowerShell execution
 
-## MITRE ATT&CK Mapping
-- T1059.001 – PowerShell
-- T1027 – Obfuscated Files or Information
-- T1218 – Signed Binary Proxy Execution
+---
+
+## Methodology
+1. Executed PowerShell commands designed to generate detectable telemetry
+2. Collected Sysmon Event ID data
+3. Analyzed timestamps, parent-child processes, and command-line arguments
+4. Documented findings in an incident report format
+
+---
+
+## Key Outcomes
+- Successful identification of suspicious execution behavior
+- Accurate timeline reconstruction using event data
+- SOC-ready incident documentation
+
+---
+
+## Skills Demonstrated
+- Host-based detection
+- Windows event analysis
+- Incident response documentation
+- Timeline reconstruction
+
+---
+
+## Disclaimer
+All activity was conducted in a controlled lab environment for training purposes.
