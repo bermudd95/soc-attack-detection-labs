@@ -18,120 +18,130 @@ Each project simulates realistic attack scenarios or analyst responsibilities co
 
 ## Project Structure
 
-### 01 — SSH Brute Force Attack Simulation
-Simulated a real-world SSH brute-force attack using attacker and defender Linux systems. Focused on identifying authentication abuse through log analysis, reconstructing the attack timeline, and producing mitigation guidance.
+### **00 — SOC Case Study**
+A foundational case study providing context for the broader set of labs. It may include scenarios, hypotheses, or analysis frameworks used across the rest of the projects.  [oai_citation:3‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
+
+---
+
+### **01 — SSH Brute Force Detection**
+Simulates a brute‑force attack against SSH and focuses on identifying evidence in Linux authentication logs, reconstructing the attack timeline, and documenting mitigation recommendations.  [oai_citation:4‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
 
 **Skills demonstrated:**
-- Linux log analysis
-- Adversary simulation
-- Incident documentation
-- Root-cause analysis
+- Linux log analysis  
+- Adversary behavior simulation  
+- Mitigation strategies  
+- Analyst documentation
 
 ---
 
-### 02 — Threat Analysis & Vulnerability Assessment (CISA-Aligned)
-Analyzed publicly disclosed vulnerabilities using CISA advisories to assess technical and business risk. Produced a sample internal security advisory and a Python-based ethical decryption demonstration script executed in a sandbox environment.
+### **02 — Phishing Live Response Lab**
+Analyzes a live phishing simulation to identify phishing indicators, document attack artifacts, and guide effective response actions.  [oai_citation:5‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
 
 **Skills demonstrated:**
-- Threat intelligence analysis
-- Vulnerability assessment
-- Security advisory writing
-- MITRE ATT&CK alignment
+- Phishing investigation  
+- Evidence collection  
+- Response tactics
 
 ---
 
-### 03 — Phishing Response & Security Awareness Lab
-Analyzed simulated phishing emails, developed a realistic phishing example, and created a user-focused phishing awareness training presentation. Emphasized both detection and prevention through education.
+### **03 — Phishing Playbook & Response**
+Develops a structured phishing incident response playbook that outlines detection, containment, eradication, communication, and remediation steps.  [oai_citation:6‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
 
 **Skills demonstrated:**
-- Phishing analysis
-- Social engineering awareness
-- Security training development
-- SOC reporting practices
+- Playbook creation  
+- IR planning and documentation  
+- Cross‑team coordination concepts
 
 ---
 
-### 04 — Sysmon Event Analysis & Incident Response
-Captured and analyzed Windows Sysmon telemetry to detect suspicious PowerShell execution. Reconstructed execution timelines and produced a formal incident report suitable for SOC escalation workflows.
+### **04 — EDR & Sysmon Detection**
+Leverages Windows Sysmon telemetry to detect and analyze suspicious activity (e.g., PowerShell misuse), reconstruct timelines, and produce incident reports following SOC escalation workflows.  [oai_citation:7‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
 
 **Skills demonstrated:**
-- Host-based detection
-- Windows event analysis
-- Timeline reconstruction
-- Incident response documentation
+- Host telemetry analysis  
+- Event correlation  
+- Incident reconstruction
 
 ---
 
-### 05 — Threat Intelligence Brief
-Produced an operational threat intelligence brief focused on credential harvesting campaigns. Translated external threat information into actionable detection priorities and response considerations.
+### **05 — Threat Intelligence Brief**
+Produces a threat intelligence brief focused on an adversary or campaign. Translates external threat data into actionable detection priorities and recommendations.  [oai_citation:8‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
 
 **Skills demonstrated:**
-- Intelligence synthesis
-- Analyst-focused reporting
-- Risk communication
-- ATT&CK-based threat mapping
+- Threat synthesis  
+- Risk communication  
+- ATT&CK mapping
 
 ---
 
-### 06 — Phishing Incident Response Playbook
-Created a practical phishing incident response playbook outlining identification, containment, eradication, recovery, and lessons learned. Designed to guide consistent SOC response actions.
+### **06 — Threat Analysis (CISA)**
+Assesses a publicly released vulnerability or security advisory (e.g., CISA) to determine technical risk, business impact, and mitigation guidance. May include sandboxed demonstration scripts.  [oai_citation:9‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
 
 **Skills demonstrated:**
-- Incident response planning
-- Playbook development
-- Cross-team coordination concepts
-- SOC operational maturity
+- Vulnerability analysis  
+- Advisory interpretation  
+- Detection guidance
 
 ---
 
-### 07 — Detection & Response Use Case
-Documented a conceptual SOC detection use case correlating phishing activity with authentication anomalies. Focused on detection logic, alert context, and response actions rather than tool-specific implementation.
+### **07 — Detection & Response Use Case**
+Documents a SOC detection and response use case, correlating multiple signals (e.g., phishing activity with login anomalies), designing alert logic, and outlining response decisions and actions.  [oai_citation:10‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
 
 **Skills demonstrated:**
-- Detection engineering concepts
-- Alert logic design
-- SOC triage workflows
-- Threat-to-detection mapping
+- Detection engineering concepts  
+- Alert logic formulation  
+- Triage workflows
 
 ---
 
-## Tools & Technologies Used
-- Linux & Windows operating systems
-- Kali Linux and common offensive tooling
-- Sysmon and Windows Event Logs
-- Python scripting (sandboxed)
-- MITRE ATT&CK Framework
-- CISA advisories and public threat intelligence
+## 🛠 Tools & Frameworks Used
+
+Across the labs you’ll see:
+- **Linux & Windows OSes**
+- **Kali Linux and common Pentest tooling**
+- **Sysmon & Windows Event Logging**
+- **Python scripting**
+- **MITRE ATT&CK mapping**
+- **Threat intelligence sources (e.g., CISA advisories)**  [oai_citation:11‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
 
 ---
 
-## Documentation Standards
+## 📄 Documentation Standards
+
 Each project includes:
-- Clear objectives
-- Defined scope and environment
-- Step-by-step methodology
-- Findings and outcomes
-- Professional disclaimers
+- Defined objectives and scope  
+- Environment setup and assumptions  
+- Step‑by‑step methodology  
+- Analysis, findings, and outcomes  
+- Professional narration and disclaimers  [oai_citation:12‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
 
-This structure mirrors internal SOC documentation and analyst reporting standards.
-
----
-
-## Intended Audience
-- SOC Analysts
-- Blue Team practitioners
-- Hiring managers and technical interviewers
-- Cybersecurity students and career switchers
+This structure mirrors documentation practices expected in analyst roles.  [oai_citation:13‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
 
 ---
 
-## Disclaimer
-All projects were conducted in controlled lab environments for educational and demonstration purposes only. No live systems or production environments were impacted.
+## 🎯 Who This Is For
+
+- SOC Analysts & Blue Team practitioners  
+- Cybersecurity students and career switchers  
+- Hiring managers and technical interviewers  
+- Detection engineers and IR team members  [oai_citation:14‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
 
 ---
 
-## Author
+## ⚠️ Disclaimer
+
+All labs were conducted in controlled environments for **educational and demonstration purposes only**. No production systems were impacted.  [oai_citation:15‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
+
+---
+
+## 👤 Author
+
 **Danny Bermudez**  
-Entry-Level Cybersecurity Analyst  
-Focused on SOC operations, detection, and incident response
+Entry‑Level Cybersecurity Analyst focused on SOC operations, detection, and incident response.  [oai_citation:16‡GitHub](https://github.com/bermudd95/soc-attack-detection-labs)
+
+---
+
+## 🔗 Contributions
+
+Contributions and improvements are welcome via GitHub Issues or Pull Requests!
 
