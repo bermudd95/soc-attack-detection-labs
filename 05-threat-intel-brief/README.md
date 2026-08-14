@@ -51,3 +51,5 @@ This threat intelligence brief examines phishing-based credential harvesting act
 
 ## Disclaimer
 This threat intelligence brief is a simulated exercise created for educational and portfolio demonstration purposes. It does not represent live threat reporting.
+
+*Back to the [Main Repository](https://github.com/bermudd95/cti-threat-intelligence-brief)*
