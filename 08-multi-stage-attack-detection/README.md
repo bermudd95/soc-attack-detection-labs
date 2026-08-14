@@ -187,3 +187,5 @@ This project provided hands-on experience investigating attack activity from ini
 **Danny Bermudez**
 
 Cybersecurity Analyst | SOC Analyst Candidate
+
+*Back to the [Main Repository](https://github.com/bermudd95/elastic-siem-attack-lab)*
