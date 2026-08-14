@@ -47,3 +47,5 @@ The focus is on host-based detection, event correlation, and incident documentat
 
 ## Disclaimer
 All activity was conducted in a controlled lab environment for training purposes.
+
+*Back to [Main Repository](https://github.com/bermudd95/sysmon-edr-threat-hunting)*
